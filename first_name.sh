@@ -1,2 +1,3 @@
 #!/bin/bash
-echo $(awk -F: '{print $1}' <<< `head -1 name.txt`)
+value=`cat name.txt`
+echo $value| awk '{split($0,fname,":")} END{print fname[1]}'
