@@ -1,8 +1,0 @@
----
-- hosts: localhost
-  connection: local
-  tasks:
-  - name: ping
-    command: ""
-    command: ""
-    register: results
