@@ -18,8 +18,6 @@ RUN \
   rm -rf /var/cache/apk/*
 
 RUN mkdir /etc/ansible/ /ansible
-RUN echo "[local]" >> /etc/ansible/hosts && \
-    echo "localhost" >> /etc/ansible/hosts
 
 RUN \
   curl -fsSL https://releases.ansible.com/ansible/ansible-2.2.2.0.tar.gz -o ansible.tar.gz && \
