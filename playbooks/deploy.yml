@@ -23,7 +23,7 @@
        command: python /tmp/last_name.py
        register: ps2
 
-     # Print the shell task's stdout.
+     # Print the shell task's stdout .
      - debug: msg={{ ps2.stdout }}
 
 
