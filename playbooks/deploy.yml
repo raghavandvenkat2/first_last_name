@@ -15,6 +15,7 @@
 
      # Print the shell task's stdout.
      - debug: msg={{ ps.stdout }}
+     - debug: var={{ ps.stdout_lines }}
 
      - name: Transfer the python script
        copy: src=last_name.py dest=/tmp mode=0777
@@ -25,5 +26,5 @@
 
      # Print the shell task's stdout .
      - debug: msg={{ ps2.stdout }}
-
+     - debug: var={{ ps2.stdout_lines }}
 
