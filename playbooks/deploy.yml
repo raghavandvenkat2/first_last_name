@@ -19,7 +19,7 @@
      - name: Transfer the python script
        copy: src=last_name.py dest=/tmp mode=0777
 
-     - name: Execute the script
+     - name: Execute the python script
        command: python /tmp/last_name.py
        register: ps2
 
